@@ -10,6 +10,8 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 /**
  * @author lizuhao
  * @date 2024/7/17
@@ -60,4 +62,14 @@ public interface DishMapper {
      */
     @AutoFill(value = OperationType.UPDATE)
     void update(Dish dish);
+
+    /**
+     * 条件查询菜品和口味
+     * @param dish
+     * @return
+     */
+    List<Dish> list(Dish dish);
+
+
+
 }

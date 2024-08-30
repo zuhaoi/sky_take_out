@@ -11,3 +11,7 @@ sky:
 
     bucket-name: sky-take-out
 
+  wechat:
+    appid:
+    secret:
+
